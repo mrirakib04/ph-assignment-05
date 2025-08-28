@@ -60,3 +60,9 @@ const onCallClick = (name, number) => {
   coin -= 20;
   coinElement.innerText = coin;
 };
+
+// History Clear Functionality
+const historyClearClick = () => {
+  hotlineCallHistory.innerHTML = "";
+  alert("Call history has been cleared.");
+};
