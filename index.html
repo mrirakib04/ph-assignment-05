@@ -116,6 +116,7 @@
               <i class="fa-regular fa-copy"></i>Copy</button
             ><button
               class="py-2 w-full bg-green-700 hover:bg-green-600 duration-300 text-white font-medium text-base rounded-lg flex items-center gap-1 justify-center"
+              onclick='onCallClick("National Emergency Number","999")'
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
@@ -156,6 +157,7 @@
             >
               <i class="fa-regular fa-copy"></i>Copy</button
             ><button
+              onclick='onCallClick("Police Helpline Number","109")'
               class="py-2 w-full bg-green-700 hover:bg-green-600 duration-300 text-white font-medium text-base rounded-lg flex items-center gap-1 justify-center"
             >
               <i class="fa-solid fa-phone"></i>Call
@@ -197,6 +199,7 @@
             >
               <i class="fa-regular fa-copy"></i>Copy</button
             ><button
+              onclick='onCallClick("Fire Service Number","117")'
               class="py-2 w-full bg-green-700 hover:bg-green-600 duration-300 text-white font-medium text-base rounded-lg flex items-center gap-1 justify-center"
             >
               <i class="fa-solid fa-phone"></i>Call
@@ -238,6 +241,7 @@
             >
               <i class="fa-regular fa-copy"></i>Copy</button
             ><button
+              onclick='onCallClick("Ambulance Service","1994-999999")'
               class="py-2 w-full bg-green-700 hover:bg-green-600 duration-300 text-white font-medium text-base rounded-lg flex items-center gap-1 justify-center"
             >
               <i class="fa-solid fa-phone"></i>Call
@@ -281,6 +285,7 @@
             >
               <i class="fa-regular fa-copy"></i>Copy</button
             ><button
+              onclick='onCallClick("Women & Child Helpline","1098")'
               class="py-2 w-full bg-green-700 hover:bg-green-600 duration-300 text-white font-medium text-base rounded-lg flex items-center gap-1 justify-center"
             >
               <i class="fa-solid fa-phone"></i>Call
@@ -320,8 +325,10 @@
             <button
               class="py-2 w-full border-2 text-gray-700 border-gray-500 hover:border-green-500 duration-300 font-medium text-base rounded-lg flex items-center gap-1 justify-center"
             >
-              <i class="fa-regular fa-copy"></i>Copy</button
-            ><button
+              <i class="fa-regular fa-copy"></i>Copy
+            </button>
+            <button
+              onclick='onCallClick("Anti-Corruption Helpline","106")'
               class="py-2 w-full bg-green-700 hover:bg-green-600 duration-300 text-white font-medium text-base rounded-lg flex items-center gap-1 justify-center"
             >
               <i class="fa-solid fa-phone"></i>Call
@@ -363,6 +370,7 @@
             >
               <i class="fa-regular fa-copy"></i>Copy</button
             ><button
+              onclick='onCallClick("Electricity Helpline","16216")'
               class="py-2 w-full bg-green-700 hover:bg-green-600 duration-300 text-white font-medium text-base rounded-lg flex items-center gap-1 justify-center"
             >
               <i class="fa-solid fa-phone"></i>Call
@@ -402,8 +410,10 @@
             <button
               class="py-2 w-full border-2 text-gray-700 border-gray-500 hover:border-green-500 duration-300 font-medium text-base rounded-lg flex items-center gap-1 justify-center"
             >
-              <i class="fa-regular fa-copy"></i>Copy</button
-            ><button
+              <i class="fa-regular fa-copy"></i>Copy
+            </button>
+            <button
+              onclick='onCallClick("Brac Helpline","16445")'
               class="py-2 w-full bg-green-700 hover:bg-green-600 duration-300 text-white font-medium text-base rounded-lg flex items-center gap-1 justify-center"
             >
               <i class="fa-solid fa-phone"></i>Call
@@ -416,7 +426,7 @@
         >
           <div class="w-full flex items-center gap-5 justify-between">
             <img
-              src="./assets/images/coin.png"
+              src="./assets/images/Bangladesh-Railway.png"
               class="max-h-12"
               alt="card-image"
             />
@@ -447,6 +457,7 @@
             >
               <i class="fa-regular fa-copy"></i>Copy</button
             ><button
+              onclick='onCallClick("Bangladesh Railway Helpline","163")'
               class="py-2 w-full bg-green-700 hover:bg-green-600 duration-300 text-white font-medium text-base rounded-lg flex items-center gap-1 justify-center"
             >
               <i class="fa-solid fa-phone"></i>Call
@@ -455,7 +466,6 @@
         </div>
       </div>
       <div
-        id="history"
         class="col-span-1 w-full flex flex-col items-center gap-3 bg-white rounded-2xl p-3 h-full"
       >
         <div class="w-full flex items-center gap-3 justify-between">
@@ -463,11 +473,12 @@
             <i class="fa-regular fa-clock text-xl"></i>Call History
           </p>
           <button
-            class="px-5 py-2 rounded-full text-white bg-green-800 hover:bg-green-600 duration-300 font-medium hover:"
+            class="px-5 py-2 rounded-full text-white bg-green-800 hover:bg-green-600 duration-300 font-medium"
           >
             Clear
           </button>
         </div>
+        <div id="history" class="w-full flex flex-col items-center gap-2"></div>
       </div>
     </main>
     <footer
