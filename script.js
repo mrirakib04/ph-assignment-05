@@ -66,3 +66,13 @@ const historyClearClick = () => {
   hotlineCallHistory.innerHTML = "";
   alert("Call history has been cleared.");
 };
+
+// Copy Functionality
+const copyElement = document.getElementById("copy");
+let copyCount = 0;
+const copyClick = (num) => {
+  copyCount += 1;
+  copyElement.innerText = copyCount;
+  alert(`You have copied this helpline number: ${num}`);
+  navigator.clipboard.writeText(num);
+};
